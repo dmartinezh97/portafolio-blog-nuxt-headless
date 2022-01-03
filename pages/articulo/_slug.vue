@@ -12,16 +12,9 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    try {
-      const article = await $content("articles", params.slug).fetch();
-  
-      return { article };
-    } catch{
-      error({
-        statusCode: 404,
-        message: "heeey"
-      })
-    }
+    const article = await $content("articles", params.slug).fetch();
+
+    return { article };
   },
 
   methods: {

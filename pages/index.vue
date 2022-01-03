@@ -13,7 +13,7 @@
               Daniel Martínez<br /><span class="text-sky-500">Full-Stack</span>
               Developer
             </h1>
-            <p class="undefined text-lg text-gray-900 dark:text-gray-200">
+            <p class="text-lg text-gray-900 dark:text-gray-200">
               Me apasiona crear experiencias web limpias y fáciles de usar.
               Ayudo a las empresas a crear productos que la gente adora.
             </p>
