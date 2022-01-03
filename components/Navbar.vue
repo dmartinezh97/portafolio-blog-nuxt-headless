@@ -12,8 +12,8 @@
         class="flex flex-wrap items-center justify-center text-base md:ml-auto space-x-6"
       >
         <a class="cursor-pointer" href="/blog">Blog</a>
-        <a class="cursor-pointer" href="/uses">Recursos</a>
-        <a class="cursor-pointer" href="/about">About</a>
+        <!-- <a class="cursor-pointer" href="/uses">Recursos</a>
+        <a class="cursor-pointer" href="/about">About</a> -->
       </nav>
     </div>
   </header>
