@@ -15,7 +15,7 @@
                 <span v-if="herramienta.title" class="block xl:inline">{{ herramienta.title }}</span>
               </h1>
               <p v-if="herramienta.description" class="mx-auto text-base text-gray-500 sm:max-w-md lg:text-xl md:max-w-3xl">{{ herramienta.description }}</p>
-              <div v-if="herramienta.categorias" class="flex gap-x-2">
+              <div v-if="herramienta.categorias" class="flex gap-2">
                 <div v-for="cat in herramienta.categorias" :key="'categoria-'+cat" class="text-xs font-medium text-blue-500 border-2 rounded-lg border-blue-500 px-3 py-1">
                   <span v-text="cat"></span>
                 </div>
@@ -31,6 +31,9 @@
             </div>
           </div>
         </div>
+      </section>
+      <section class="px-8 pb-16 md:px-0 xl:px-5">
+        <nuxt-content :document="herramienta" class="leading-loose" />
       </section>
     </main>
   </div>

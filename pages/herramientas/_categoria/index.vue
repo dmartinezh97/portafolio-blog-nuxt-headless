@@ -3,7 +3,10 @@
     <Navbar></Navbar>
     <main class="container mx-auto pt-16">
       <section class="py-10">
-        <!-- <h2 class="mb-10 text-center text-3xl md:text-5xl"><span class="text-gray-800 font-bold dark:text-gray-50">Blog</span> &#9996;</h2> -->
+        <div class="mb-10 text-center">
+          <h2 class="text-3xl md:text-5xl mb-4 text-gray-800 font-bold">{{ index[0].title }}</h2>
+          <p class="text-lg text-gray-900 max-w-3xl mx-auto">{{ index[0].description }}</p>
+        </div>
         <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <template v-if="herramientas">
             <div v-for="herramienta in herramientas" :key="herramienta.slug" class="w-full border border-gray-200 rounded-lg shadow-sm overflow-hidden">
@@ -40,8 +43,10 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
+    const index = await $content("herramientas/index").where({ slug: { $contains: params.categoria } }).limit(1).fetch();
+
     const herramientas = await $content(`herramientas/` + params.categoria).fetch();
-    return { herramientas, params };
+    return { index, herramientas, params };
   },
 
    methods: {

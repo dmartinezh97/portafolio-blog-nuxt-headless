@@ -71,3 +71,5 @@ More information about the usage of this directory in [the documentation](https:
 
 # Más info
 https://nuxtjs.org/tutorials/creating-blog-with-nuxt-content/#lets-create-our-markdown-page
+
+https://markdown.es/sintaxis-markdown/
