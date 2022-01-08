@@ -4,7 +4,9 @@
     <article class="md:pt-16" v-if="article">
       <nuxt-content :document="article" />
       <p>Post last updated: {{ article.updatedAt }}</p>
-      {{article}}
+      <pre>
+        {{article}}
+      </pre>
     </article>
   </div>
 </template>

@@ -13,6 +13,7 @@
       >
         <a class="cursor-pointer" href="/blog">Blog</a>
         <a class="cursor-pointer" href="/recursos">Recursos</a>
+        <a class="cursor-pointer" href="/herramientas">Herramientas</a>
         <!-- <a class="cursor-pointer" href="/uses">Recursos</a>
         <a class="cursor-pointer" href="/about">About</a> -->
       </nav>

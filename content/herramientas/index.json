@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Desarrollo Web",
+        "description": "Herramientas indispensables para el desarrollo web que harán que ahorres tiempo en tu día a día",
+        "slug": "desarrollo-web",
+        "img": "html5.svg"
+    },
+    {
+        "title": "Seguridad Informática",
+        "description": "Herramientas de pentesting para evaluar los sistemas de seguridad de una infraestructura",
+        "slug": "seguridad-informatica",
+        "img": "fsecure.svg"
+    }
+]

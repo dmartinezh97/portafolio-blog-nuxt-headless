@@ -56,7 +56,7 @@
                 Tailwind CSS
               </div>
               <div class="clay dark:shadow-none z-10 flex flex-col items-center justify-center w-36 py-6 bg-white bg-opacity-60 shadow-gray-800/20 shadow-xl dark:bg-gray-800 dark:bg-opacity-60 rounded-2xl backdrop-blur-sm bg-clip-padding border border-gray-100 border-opacity-80 dark:border-opacity-10 backdrop-saturate-150">
-                <img :src="require('~/content/img/vscode.svg')" alt="VS Code" class="w-16 h-16 md:w-20 md:h-20 mb-2 text-primary-500">
+                <img :src="require('~/content/img/logos/vscode.svg')" alt="VS Code" class="w-16 h-16 md:w-20 md:h-20 mb-2 text-primary-500">
                 VS Code
               </div>
               <div class="clay dark:shadow-none z-10 flex flex-col items-center justify-center w-36 py-6 bg-white bg-opacity-60 shadow-gray-800/20 shadow-xl dark:bg-gray-800 dark:bg-opacity-60 rounded-2xl backdrop-blur-sm bg-clip-padding border border-gray-100 border-opacity-80 dark:border-opacity-10 backdrop-saturate-150">
@@ -117,16 +117,6 @@
 <script>
 export default {
   name: "Inicio",
-  async asyncData({ $content, params, error }) {
-    const index = await $content("index")
-      .fetch()
-      .catch((err) => {
-        error({ statusCode: 404, message: "index not found" });
-      });
-    return {
-      index,
-    };
-  },
 };
 </script>
 
