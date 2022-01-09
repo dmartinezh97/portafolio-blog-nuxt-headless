@@ -39,6 +39,8 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    //https://image.nuxtjs.org/components/nuxt-img
+    '@nuxt/image',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules

@@ -11,10 +11,9 @@
           <template v-if="herramientas">
             <div v-for="herramienta in herramientas" :key="herramienta.slug" class="w-full border border-gray-200 rounded-lg shadow-sm overflow-hidden">
               <div class="flex flex-col items-center justify-center p-5">
-                <img class="w-28 h-28 mb-6 rounded-full" :src="require(`~/content/img/logos/${herramienta.logo}`)">
+                <nuxt-img format="webp" class="w-28 h-28 mb-6 rounded-full" :src="`/img/logos/${herramienta.logo}`" />
                 <h2 class="text-lg font-medium">{{ herramienta.title }}</h2>
-                <!-- <p class="font-medium text-blue-500">CEO and Founder</p> -->
-                <p class="text-gray-400 px-5 text-center">{{ truncarTexto(herramienta.description) }}</p>
+                <p class="text-gray-400 px-1 text-center">{{ truncarTexto(herramienta.description) }}</p>
               </div>
               <div class="flex border-t border-gray-200 divide-x divide-gray-200">
                   <NuxtLink v-if="herramienta.slug" :to="`/herramientas/${params.categoria}/${herramienta.slug}`" class="flex-1 block p-2 text-center bg-blue-500 hover:bg-blue-600 text-gray-300 transition duration-200 ease-out hover:text-gray-100">
@@ -32,10 +31,6 @@
           </template>
         </div>
       </section>
-      <!-- <h1>{{this.$route.params.pathMatch}} _.vue</h1> -->
-      <!-- <pre>
-        {{herramientas}}
-      </pre> -->
     </main>
   </div>
 </template>
@@ -51,8 +46,10 @@ export default {
 
    methods: {
     truncarTexto(dato) {
-      if(dato.length > 70){
-        dato = dato.substring(0, 70).concat("...");
+      if(dato!=undefined){
+        if(dato.length > 70){
+          dato = dato.substring(0, 70).concat("...");
+        }
       }
       return dato;
     },

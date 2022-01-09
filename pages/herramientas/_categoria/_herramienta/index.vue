@@ -6,7 +6,7 @@
         <div class="flex flex-wrap items-center">
           <div class="w-full md:w-1/2">
             <div class="w-full h-auto overflow-hidden rounded-md shadow-xl sm:rounded-xl">
-                <img :src="require(`~/content/img/herramientas/` + params.categoria + `/` + herramienta.img)">
+                <nuxt-img format="webp" :src="`/img/herramientas/${params.categoria}/${herramienta.img}`" />
             </div>
           </div>
           <div class="w-full md:w-1/2 md:px-6">
@@ -40,20 +40,17 @@
 </template>
 
 <script>
+
+import Imagen from '~/components/Imagen'
+
 export default {
+  components: {
+    Imagen
+  },
   async asyncData({ $content, params }) {
     const herramienta = await $content(`herramientas/` + params.categoria + `/` + params.herramienta).fetch();
 
     return { herramienta, params };
   },
-
-  //  methods: {
-  //   truncarTexto(dato) {
-  //     if(dato.length > 70){
-  //       dato = dato.substring(0, 70).concat("...");
-  //     }
-  //     return dato;
-  //   },
-  // },
 };
 </script>

@@ -1,12 +1,12 @@
 ---
-title: Visual Studio Code - Editor de código
-description: Visual Studio Code es un editor de código redefinido y optimizado para construir y depurar aplicaciones web.
-img: visual-studio-code.jpeg
-alt: Visual Studio Code - Editor de código
-logo: vscode.svg
-link: https://code.visualstudio.com
-categorias: ["Editor de código", "Microsoft"]
-so: ["Windows", "macOS", "Linux"]
+title: Shodan.io
+description: Shodan es el primer motor de búsqueda del mundo para dispositivos conectados a Internet. Descubra cómo la inteligencia de Internet puede ayudarle a tomar mejores decisiones.
+img: shodan-io.png
+alt: Shodan.io - Motor de búsqueda para dispositivos conectados a Internet.
+logo: shodan.png
+link: https://www.shodan.io/
+categorias: ["Motor de búsqueda"]
+so: []
 ---
 
 ## Extensiones recomendadas

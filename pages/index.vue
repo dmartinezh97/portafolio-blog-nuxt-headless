@@ -52,23 +52,23 @@
           <div class="container mx-auto my-20">
             <div class="flex flex-row flex-wrap justify-center gap-8 text-sm font-semibold text-center text-gray-800 dark:text-gray-100">
               <div class="clay dark:shadow-none z-10 flex flex-col items-center justify-center w-36 py-6 bg-white bg-opacity-60 shadow-gray-800/20 shadow-xl dark:bg-gray-800 dark:bg-opacity-60 rounded-2xl backdrop-blur-sm bg-clip-padding border border-gray-100 border-opacity-80 dark:border-opacity-10 backdrop-saturate-150">
-                <img :src="require('~/content/img/tailwindcss.svg')" alt="Tailwind CSS" class="w-16 h-16 md:w-20 md:h-20 mb-2 text-primary-500">
+                <img :src="'/img/tailwindcss.svg'" alt="Tailwind CSS" class="w-16 h-16 md:w-20 md:h-20 mb-2 text-primary-500">
                 Tailwind CSS
               </div>
               <div class="clay dark:shadow-none z-10 flex flex-col items-center justify-center w-36 py-6 bg-white bg-opacity-60 shadow-gray-800/20 shadow-xl dark:bg-gray-800 dark:bg-opacity-60 rounded-2xl backdrop-blur-sm bg-clip-padding border border-gray-100 border-opacity-80 dark:border-opacity-10 backdrop-saturate-150">
-                <img :src="require('~/content/img/logos/vscode.svg')" alt="VS Code" class="w-16 h-16 md:w-20 md:h-20 mb-2 text-primary-500">
+                <img :src="'/img/logos/vscode.svg'" alt="VS Code" class="w-16 h-16 md:w-20 md:h-20 mb-2 text-primary-500">
                 VS Code
               </div>
               <div class="clay dark:shadow-none z-10 flex flex-col items-center justify-center w-36 py-6 bg-white bg-opacity-60 shadow-gray-800/20 shadow-xl dark:bg-gray-800 dark:bg-opacity-60 rounded-2xl backdrop-blur-sm bg-clip-padding border border-gray-100 border-opacity-80 dark:border-opacity-10 backdrop-saturate-150">
-                <img :src="require('~/content/img/vuejs.svg')" alt="Vue JS" class="w-16 h-16 md:w-20 md:h-20 mb-2 text-primary-500">
+                <img :src="'/img/vuejs.svg'" alt="Vue JS" class="w-16 h-16 md:w-20 md:h-20 mb-2 text-primary-500">
                 Vue JS
               </div>
               <div class="clay dark:shadow-none z-10 flex flex-col items-center justify-center w-36 py-6 bg-white bg-opacity-60 shadow-gray-800/20 shadow-xl dark:bg-gray-800 dark:bg-opacity-60 rounded-2xl backdrop-blur-sm bg-clip-padding border border-gray-100 border-opacity-80 dark:border-opacity-10 backdrop-saturate-150">
-                <img :src="require('~/content/img/csharp.svg')" alt="C#" class="w-16 h-16 md:w-20 md:h-20 mb-2 text-primary-500">
+                <img :src="'/img/csharp.svg'" alt="C#" class="w-16 h-16 md:w-20 md:h-20 mb-2 text-primary-500">
                 C#
               </div>
               <div class="clay dark:shadow-none z-10 flex flex-col items-center justify-center w-36 py-6 bg-white bg-opacity-60 shadow-gray-800/20 shadow-xl dark:bg-gray-800 dark:bg-opacity-60 rounded-2xl backdrop-blur-sm bg-clip-padding border border-gray-100 border-opacity-80 dark:border-opacity-10 backdrop-saturate-150">
-                <img :src="require('~/content/img/ts.svg')" alt="TypeScript" class="w-16 h-16 md:w-20 md:h-20 mb-2 text-primary-500">
+                <img :src="'/img/ts.svg'" alt="TypeScript" class="w-16 h-16 md:w-20 md:h-20 mb-2 text-primary-500">
                 TypeScript
               </div>
             </div>
@@ -98,17 +98,12 @@
       <section class="pb-16 bg-white">
         <div class="container mx-auto">
           <div class="max-w-2xl py-16 md:mx-auto sm:text-center md:mb-12">
-            <h2 class="max-w-2xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-100 md:text-5xl md:mx-auto">Front-End 🤓 developer with a design sense.</h2>
+            <h2 class="max-w-2xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-100 md:text-5xl md:mx-auto">asda dsada d </h2><!-- Front-End 🤓 developer with a design sense. -->
             <p class="text-lg text-gray-900 dark:text-gray-200">
               Building websites that look good is the first step, but it's also important to make sure your website's code is easy to read and maintain. I take care of both so you can focus on running your business.
             </p>
           </div>
         </div>
-      </section>
-      <section>
-        <NuxtLink to="blog">
-          alsdkam dlka dlad ads
-        </NuxtLink>
       </section>
     </main>
   </div>
@@ -122,10 +117,10 @@ export default {
 
 <style>
 .wave {
-    background-image: url('~/content/img/divider.svg');
+    background-image: url('~/static/img/divider.svg');
 }
 .wave-1 {
-    background-image: url('~/content/img/divider-1.svg');
+    background-image: url('~/static/img/divider-1.svg');
 }
 .spacer {
     aspect-ratio: 900/100;

@@ -6,7 +6,7 @@
         <img
           v-if="error.statusCode === 404"
           class="max-w-2xl mx-auto"
-          :src="require(`@/content/img/404.svg`)"
+          :src="`/img/404.svg`"
         />
         <div class="text-center mb-4">
           <h1 class="text-base font-bold text-gray-700 sm:text-lg md:text-xl">
