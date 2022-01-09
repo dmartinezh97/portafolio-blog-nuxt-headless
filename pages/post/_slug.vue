@@ -1,14 +1,11 @@
 <template>
-  <div>
-    <Navbar></Navbar>
-    <article class="md:pt-16" v-if="article">
-      <nuxt-content :document="article" />
-      <p>Post last updated: {{ article.updatedAt }}</p>
-      <pre>
-        {{article}}
-      </pre>
-    </article>
-  </div>
+  <article v-if="article">
+    <nuxt-content :document="article" />
+    <p>Post last updated: {{ article.updatedAt }}</p>
+    <pre>
+      {{article}}
+    </pre>
+  </article>
 </template>
 
 <script>

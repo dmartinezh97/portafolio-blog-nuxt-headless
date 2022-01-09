@@ -10,7 +10,7 @@
         />
         <div class="text-center mb-4">
           <h1 class="text-base font-bold text-gray-700 sm:text-lg md:text-xl">
-            Lo sentimos, no se puede acceder a la página que busca
+            Lo sentimos, no se puede acceder a la página que busca ({{ error.statusCode }})
           </h1>
         </div>
         <div id="buttons" class="flex justify-center flex-wrap gap-4 px-6">
