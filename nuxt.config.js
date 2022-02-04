@@ -2,9 +2,9 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
-  // router: {
-  //   base: '/portafolio-blog-nuxt-headless/dist/'
-  // },
+  router: {
+    linkExactActiveClass: 'text-white bg-blue-500 sm:text-blue-500 sm:bg-white'
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
