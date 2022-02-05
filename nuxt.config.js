@@ -2,6 +2,10 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  server: {
+    host: '192.168.1.11'
+  },
+
   router: {
     linkExactActiveClass: 'text-white bg-blue-500 sm:text-blue-500 sm:bg-transparent'
   },

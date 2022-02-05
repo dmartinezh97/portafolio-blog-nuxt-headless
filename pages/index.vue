@@ -48,8 +48,8 @@
         </div>
       </div>
       <div>
-        <div class="container mx-auto my-10">
-          <div class="flex flex-row flex-wrap justify-center gap-8 text-sm font-semibold text-center text-gray-800 dark:text-gray-100">
+        <div class="container mx-auto my-10 px-8">
+          <div class="grid gap-4 grid-cols-2 sm:grid-cols-3 justify-items-center md:flex md:flex-row md:flex-wrap md:gap-8 md:justify-center text-sm font-semibold text-center text-gray-800 dark:text-gray-100">
             <div class="clay dark:shadow-none z-10 flex flex-col items-center justify-center w-36 py-6 bg-white bg-opacity-60 shadow-gray-800/20 shadow-xl dark:bg-gray-800 dark:bg-opacity-60 rounded-2xl backdrop-blur-sm bg-clip-padding border border-gray-100 border-opacity-80 dark:border-opacity-10 backdrop-saturate-150">
               <img :src="'/img/tailwindcss.svg'" alt="Tailwind CSS" class="w-16 h-16 md:w-20 md:h-20 mb-2 text-primary-500">
               Tailwind CSS
