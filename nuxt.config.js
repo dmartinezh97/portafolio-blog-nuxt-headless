@@ -3,14 +3,14 @@ export default {
   target: 'static',
 
   router: {
-    linkExactActiveClass: 'text-white bg-blue-500 sm:text-blue-500 sm:bg-white'
+    linkExactActiveClass: 'text-white bg-blue-500 sm:text-blue-500 sm:bg-transparent'
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'portafolio-nuxt-headless',
+    title: 'Daniel Martínez | Full-Stack Developer',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'es'
     },
     meta: [
       { charset: 'utf-8' },

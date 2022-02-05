@@ -5,15 +5,15 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors,
-    extend: {},
-  },
-  variants: {
     extend: {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
       }
     },
+  },
+  variants: {
+    extend: {},
   },
   plugins: [],
 }

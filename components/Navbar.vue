@@ -13,10 +13,8 @@
           <span class="text-xl ml-2">Dani</span>
         </a>
       </div>
-      <div :class="[!toggleMenu ? 'hidden' : '', 'w-full bg-white sm:block sm:w-auto transition-all ease-in-out duration-300 mt-3 sm:mt-0']">
-        <nav
-          :class="[!toggleMenu ? 'hidden' : 'flex', 'sm:flex flex-col sm:flex-row flex-wrap sm:items-center justify-center text-base sm:py-0 sm:space-x-6 transition-all ease-in-out duration-300']"
-        >
+      <div :class="[!toggleMenu ? 'hidden' : '', 'w-full bg-white md:bg-transparent sm:block sm:w-auto mt-3 sm:mt-0']">
+        <nav :class="[!toggleMenu ? 'hidden' : 'flex', 'sm:flex flex-col sm:flex-row flex-wrap sm:items-center justify-center text-base sm:py-0 sm:space-x-6']">
         <!-- text-gray-700 hover:bg-gray-50 md:hover:bg-transparent block pr-4 md:hover:text-blue-700 md:p-0 -->
           <NuxtLink v-for="enlace in listadoNavbar" @click.native="onClickItemMenu" :key="`enlace-${enlace.id}`" class="cursor-pointer font-medium pl-4 py-2 border-b rounded border-gray-100 sm:border-0 sm:p-0" :to="enlace.href" v-text="enlace.text"></NuxtLink>
         </nav>
