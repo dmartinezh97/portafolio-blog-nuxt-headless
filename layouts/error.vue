@@ -1,7 +1,6 @@
 <template>
   <div>
-    <Navbar></Navbar>
-    <main class="md:pt-16">
+    <main>
       <div class="container mx-auto py-16 sm:pt-0">
         <img
           v-if="error.statusCode === 404"
@@ -9,10 +8,11 @@
           :src="`/img/404.svg`"
         />
         <div class="text-center mb-4">
-          <h1 class="text-base font-bold text-gray-700 sm:text-lg md:text-xl">
+          <h1 class="text-base font-bold text-gray-700 sm:text-lg md:text-xl px-6">
             Lo sentimos, no se puede acceder a la página que busca ({{ error.statusCode }})
           </h1>
         </div>
+        <hr class="max-w-xs sm:max-w-sm mx-auto mb-4">
         <div id="buttons" class="flex justify-center flex-wrap gap-4 px-6">
           <a
             :href="'mailto:' +  'dmartinezh97@gmail.com?subject=¡He encontrado un enlace roto!&body=Hola Dani,%0D%0A%0D%0AHe encontrado un enlace roto en su sitio. La página debería estar en' + ' ' + 'entorno.dev' + currentURL"

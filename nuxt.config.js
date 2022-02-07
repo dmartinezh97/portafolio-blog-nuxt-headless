@@ -2,12 +2,12 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
-  server: {
-    host: '192.168.1.11'
-  },
+  // server: {
+  //   host: '192.168.1.11'
+  // },
 
   router: {
-    linkExactActiveClass: 'text-white bg-blue-500 sm:text-blue-500 sm:bg-transparent'
+    linkExactActiveClass: 'text-white bg-sky-500 sm:text-sky-500 sm:bg-transparent'
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -51,6 +51,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    '@nuxtjs/robots',
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
@@ -59,5 +60,11 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  robots: {
+    UserAgent: '*',
+    Disallow: '/',
+    // Allow: '/'
   }
 }
