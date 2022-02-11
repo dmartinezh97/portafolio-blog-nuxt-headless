@@ -2,9 +2,9 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
-  // server: {
-  //   host: '192.168.1.11'
-  // },
+  server: {
+    host: '192.168.1.13' //0 = localhost, 0.0.0.0 = IP local
+  },
 
   router: {
     linkExactActiveClass: 'text-white bg-sky-500 sm:text-sky-500 sm:bg-transparent'
@@ -54,12 +54,21 @@ export default {
     '@nuxtjs/robots',
   ],
 
+  render: {
+    resourceHints: false
+  },
+
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  // Image Configuration: https://image.nuxtjs.org/api/options#domains
+  image: {
+    domains: ['img.shields.io']
   },
 
   robots: {

@@ -47,7 +47,7 @@
           <div class="flex flex-col justify-center mb-4 lg:w-2/5">
             <img
               class="w-1/2 md:w-2/5 lg:w-3/5 mx-auto"
-              :src="'/img/avatar.png'"
+              :src="'/img/avatardani.png'"
               alt=""
             />
           </div>
