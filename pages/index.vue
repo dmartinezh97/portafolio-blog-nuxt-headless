@@ -9,7 +9,7 @@
             <h1
               class="text-3xl dark:text-gray-100 sm:text-4xl md:text-5xl xl:text-6xl text-black font-bold tracking-tight"
             >
-              Daniel Martínez<br /><span class="text-sky-500">Full-Stack</span>
+              Daniel Martínez<br /><span class="text-blue-500">Full-Stack</span>
               Developer
             </h1>
             <p class="text-lg text-gray-900 dark:text-gray-200">
@@ -136,7 +136,10 @@
         <div
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 my-12 sm:my-16"
         >
-          <div
+          <NuxtLink
+            :to="`/proyecto/${proyecto.slug}`"
+            v-for="proyecto in proyectos"
+            :key="'proyecto-'+proyecto.slug"
             class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100"
           >
             <svg
@@ -158,91 +161,19 @@
                 fill="#fff"
               ></path>
             </svg>
-            <p class="font-bold mt-4">Proyecto 1</p>
-            <p class="mt-2 text-sm text-gray-500">Categoria 1</p>
-          </div>
-          <div
-            class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100"
-          >
-            <svg
-              class="h-16 w-auto"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 250 343"
-              fill="none"
-            >
-              <path
-                d="M163.818 0H23.736C10.59 0 0 10.663 0 23.736v294.771c0 13.146 10.663 23.737 23.736 23.737H226.19c13.147 0 23.737-10.664 23.737-23.737V85.159h-86.109V0Z"
-                fill="#34A853"
-              ></path>
-              <path
-                d="M250.001 85.16h-86.182V0l86.182 85.16Z"
-                fill="#188038"
-              ></path>
-              <path
-                d="M46.89 132.194V245.18h156.149V132.194H46.889Zm136.722 19.354v27.388h-49.08v-27.388h49.08Zm-68.507 0v27.388H66.317v-27.388h48.788Zm-48.788 74.131v-27.388h48.788v27.388H66.317Zm68.215 0v-27.388h49.08v27.388h-49.08Z"
-                fill="#fff"
-              ></path>
-            </svg>
-            <p class="font-bold mt-4">Proyecto 2</p>
-            <p class="mt-2 text-sm text-gray-500">Categoria 2</p>
-          </div>
-          <div
-            class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100"
-          >
-            <svg
-              class="h-16 w-auto"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 250 343"
-              fill="none"
-            >
-              <path
-                d="M163.818 0H23.736C10.59 0 0 10.663 0 23.736v294.771c0 13.146 10.663 23.737 23.736 23.737H226.19c13.147 0 23.737-10.664 23.737-23.737V85.159h-86.109V0Z"
-                fill="#34A853"
-              ></path>
-              <path
-                d="M250.001 85.16h-86.182V0l86.182 85.16Z"
-                fill="#188038"
-              ></path>
-              <path
-                d="M46.89 132.194V245.18h156.149V132.194H46.889Zm136.722 19.354v27.388h-49.08v-27.388h49.08Zm-68.507 0v27.388H66.317v-27.388h48.788Zm-48.788 74.131v-27.388h48.788v27.388H66.317Zm68.215 0v-27.388h49.08v27.388h-49.08Z"
-                fill="#fff"
-              ></path>
-            </svg>
-            <p class="font-bold mt-4">Proyecto 3</p>
-            <p class="mt-2 text-sm text-gray-500">Categoria 3</p>
-          </div>
-          <div
-            class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100"
-          >
-            <svg
-              class="h-16 w-auto"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 250 343"
-              fill="none"
-            >
-              <path
-                d="M163.818 0H23.736C10.59 0 0 10.663 0 23.736v294.771c0 13.146 10.663 23.737 23.736 23.737H226.19c13.147 0 23.737-10.664 23.737-23.737V85.159h-86.109V0Z"
-                fill="#34A853"
-              ></path>
-              <path
-                d="M250.001 85.16h-86.182V0l86.182 85.16Z"
-                fill="#188038"
-              ></path>
-              <path
-                d="M46.89 132.194V245.18h156.149V132.194H46.889Zm136.722 19.354v27.388h-49.08v-27.388h49.08Zm-68.507 0v27.388H66.317v-27.388h48.788Zm-48.788 74.131v-27.388h48.788v27.388H66.317Zm68.215 0v-27.388h49.08v27.388h-49.08Z"
-                fill="#fff"
-              ></path>
-            </svg>
-            <p class="font-bold mt-4">Proyecto 4</p>
-            <p class="mt-2 text-sm text-gray-500">Categoria 4</p>
-          </div>
+            <p class="font-bold mt-4">{{proyecto.title}}</p>
+            <p class="mt-2 text-sm text-gray-500">{{proyecto.tipo}}</p>
+          </NuxtLink>
+          
         </div>
-        <a
-          href="#_"
-          class="px-8 py-4 capitalize sm:w-auto w-full text-center text-base font-medium inline-block rounded text-white hover:bg-sky-600 bg-sky-500"
-          >Ver todos los proyectos</a
-        >
+        <NuxtLink
+          to="/proyectos"
+          class="px-8 py-4 capitalize sm:w-auto w-full text-center text-base font-medium inline-block rounded text-white hover:bg-blue-600 bg-blue-500"
+          >Ver todos los proyectos</NuxtLink>
       </div>
+      <!-- <pre>
+        {{proyectos}}
+      </pre> -->
     </section>
     <div class="spacer wave-1"></div>
     <section class="py-16 bg-gray-100">
@@ -250,7 +181,7 @@
         <h2
           class="mb-12 text-center mb-5 text-3xl text-gray-800 dark:text-gray-50 md:text-5xl font-bold"
         >
-          Lo que dicen los demás.
+          Lorem ipsum dolor sit amet ...
         </h2>
       </div>
     </section>
@@ -262,7 +193,7 @@
             class="font-bold text-3xl sm:text-4xl lg:text-5xl mt-3 capitalize mb-6 leading-none tracking-tight text-gray-900 dark:text-gray-100 md:text-5xl md:mx-auto"
           >
             Un desarrollador 🤓 con
-            <span class="text-sky-500">habilidades especiales</span>
+            <span class="text-blue-500">habilidades especiales</span>
           </h2>
           <p class="text-lg text-gray-900 dark:text-gray-200">
             Crear aplicaciones y páginas web con una buena apariencia es el
@@ -283,7 +214,7 @@
                 height="192"
                 fill="currentColor"
                 viewBox="0 0 256 256"
-                class="w-12 h-12 text-sky-600 inline"
+                class="w-12 h-12 text-blue-600 inline"
               >
                 <rect width="256" height="256" fill="none"></rect>
                 <rect
@@ -355,7 +286,7 @@
                 height="192"
                 fill="currentColor"
                 viewBox="0 0 256 256"
-                class="w-12 h-12 text-sky-600 inline"
+                class="w-12 h-12 text-blue-600 inline"
               >
                 <rect width="256" height="256" fill="none"></rect>
                 <path
@@ -441,7 +372,7 @@
                 width="192"
                 height="192"
                 viewBox="0 0 256 256"
-                class="w-12 h-12 text-sky-600 inline"
+                class="w-12 h-12 text-blue-600 inline"
               >
                 <path fill="none" d="M0 0h256v256H0z"></path>
                 <ellipse
@@ -503,6 +434,11 @@
 <script>
 export default {
   name: "Inicio",
+  async asyncData({ $content }) {
+    const proyectos = await $content("proyectos").fetch();
+
+    return { proyectos };
+  },
 };
 </script>
 

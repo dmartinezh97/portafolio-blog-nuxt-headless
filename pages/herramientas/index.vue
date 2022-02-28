@@ -1,7 +1,7 @@
 <template>
   <main class="container mx-auto">
     <section class="py-10">
-      <div class="mb-10 text-center">
+      <div class="mb-10 text-center px-4">
         <h2 class="text-3xl md:text-5xl mb-4"><span class="text-gray-800 font-bold">Herramientas</span> &#128295;</h2>
         <p class="text-lg text-gray-900 max-w-3xl mx-auto">Hay muchas herramientas entre las que elegir, y es difícil encontrar las adecuadas. Por eso he creado esta lista, para que ahorres tiempo y encuentres fácilmente lo mejor que hay, clasificado por categorías para ayudarte a encontrar exactamente lo que necesitas para tu trabajo.</p>
       </div>
@@ -22,7 +22,7 @@
 <script>
 export default {
   async asyncData({ $content }) {
-    const categorias = await $content("herramientas/index").fetch();
+    const categorias = await $content("herramientas/index").sortBy('createdAt', 'desc').fetch();
 
     return { categorias };
   },

@@ -1,7 +1,7 @@
 <template>
   <main class="container mx-auto">
     <section class="py-10">
-      <div class="mb-10 text-center">
+      <div class="mb-10 text-center px-4">
         <h2 class="text-3xl md:text-5xl mb-4 text-gray-800 font-bold">{{ index[0].title }}</h2>
         <p class="text-lg text-gray-900 max-w-3xl mx-auto">{{ index[0].description }}</p>
       </div>
@@ -37,7 +37,7 @@ export default {
   async asyncData({ $content, params }) {
     const index = await $content("herramientas/index").where({ slug: { $contains: params.categoria } }).limit(1).fetch();
 
-    const herramientas = await $content(`herramientas/` + params.categoria).fetch();
+    const herramientas = await $content(`herramientas/` + params.categoria).sortBy('createdAt', 'desc').fetch();
     return { index, herramientas, params };
   },
 

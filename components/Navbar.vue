@@ -35,23 +35,28 @@ export default {
           text: "Inicio",
           href: "/"
         },
-        {
-          id: 2,
-          text: "Blog",
-          href: "/blog"
-        },
+        // {
+        //   id: 2,
+        //   text: "Blog",
+        //   href: "/blog"
+        // },
         {
           id: 3,
-          text: "Recursos",
-          href: "/recursos"
+          text: "Proyectos",
+          href: "/proyectos"
         },
+        // {
+        //   id: 4,
+        //   text: "Recursos",
+        //   href: "/recursos"
+        // },
         {
-          id: 4,
+          id: 5,
           text: "Herramientas",
           href: "/herramientas"
         },
         {
-          id: 5,
+          id: 6,
           text: "Sobre mí",
           href: "/sobremi"
         },
